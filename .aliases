@@ -19,6 +19,27 @@ alias ll="ls -lAF ${colorflag}"  # List all files colorized in long format, excl
 ### Convenience functions
 alias prettyjson='python -m json.tool'  # Pretty print a json file
 
+### GitHub aliases
+# Taken from https://github.com/driesvints/dotfiles/blob/main/aliases.zsh
+alias status="git status"
+alias branch="git branch"
+alias checkout="git checkout"
+alias add="git add"
+alias add_all="git add -A"
+alias commit="git commit -m"  # Follow with commit message
+alias diff="git diff"
+alias pop="git stash pop"
+alias pull="git pull"
+alias push="git push"
+alias stash="git stash -u"  # `-u` includes untracked files
+alias unstage="git restore --staged"  # follow with filename(s)
+# alias gl="git log --oneline --decorate --color"
+# alias amend="git add . && git commit --amend --no-edit"
+# alias force="git push --force"
+# alias nuke="git clean -df && git reset --hard"
+# alias resolve="git add . && git commit --no-edit"
+# alias wip="commit wip"
+
 # Local navigation shortcuts
 alias site='cd ~/Documents/Github/mr-devs.github.io'
 alias github='cd ~/Documents/Github'
