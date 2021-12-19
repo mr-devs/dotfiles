@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# A collection of aliases
+# Set aliases to and `ls` colors
 
 # Set ls colors based on the system we're using.
 #   Also set `colorflag` for alias functions below
