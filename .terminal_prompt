@@ -18,7 +18,6 @@ if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
 	bold=$(tput bold);
 	reset=$(tput sgr0);
-	# Solarized colors, taken from http://git.io/solarized-colors.
 	black=$(tput setaf 0);
 	blue=$(tput setaf 33);
 	cyan=$(tput setaf 37);
@@ -66,9 +65,10 @@ PROMPT+="${white}@ ";        # Add '@'
 PROMPT+="${hostStyle}%m";    # Add host
 PROMPT+="${white} in ";      # Add 'in'
 PROMPT+="${green}%2d ";      # Add working directory, two levels deep (including base)
-PROMPT+="${white} ${reset}"; # Reset color
+PROMPT+="${white}"; 		 # Make white again
 PROMPT+="
-$ "  # new line and add `$`
+⦿ ⦿ ⦿ | ${reset}"  # new line, reset, and add left screen buffer
+zle_highlight=(default:bold)  # Control command line highlighting, make CL bold
 export PROMPT
 
 ### Add some GitHub info to the prompt (included on the right side of the line)
