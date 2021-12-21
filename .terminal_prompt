@@ -15,6 +15,7 @@ autoload -Uz compinit && compinit
 
 # Set colors
 if tput setaf 1 &> /dev/null; then
+	# Reference: https://robotmoon.com/256-colors/#table-of-color-codes
 	tput sgr0; # reset colors
 	bold=$(tput bold);
 	reset=$(tput sgr0);
