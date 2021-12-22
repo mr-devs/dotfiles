@@ -66,9 +66,9 @@ PROMPT+="${white}@ ";        # Add '@'
 PROMPT+="${hostStyle}%m";    # Add host
 PROMPT+="${white} in ";      # Add 'in'
 PROMPT+="${green}%2d ";      # Add working directory, two levels deep (including base)
-PROMPT+="${white}"; # Reset color
+PROMPT+="${reset}";          # Reset color
 PROMPT+="
-${red}⦿ ${white}⦿ ${blue}⦿ ${white}|| ${reset}"  # new line and add American colored left buffer
+-> "                         # Where commands will be entered
 zle_highlight=(default:bold)  # Control command line highlighting, make CL bold
 export PROMPT
 
