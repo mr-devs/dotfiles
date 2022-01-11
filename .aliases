@@ -19,6 +19,7 @@ alias ll="ls -lAF ${colorflag}"  # List all files colorized in long format, excl
 
 ### Convenience functions
 alias prettyjson='python -m json.tool'  # Pretty print a json file
+alias checkports='lsof -P -i TCP -s TCP:LISTEN | grep localhost:8' # Print information about open ports which begin with the number '8' (aka open tunneling ports)
 
 ### GitHub aliases
 # Taken from https://github.com/driesvints/dotfiles/blob/main/aliases.zsh
